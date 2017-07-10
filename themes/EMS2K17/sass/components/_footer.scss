@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    * @file
+    * Footer.
+\*------------------------------------*/
+.footer-wrapper {
+  text-align: right;
+  background-color: #111;
+  color: #CFC0BD;
+  padding: 12px 0px;
+  padding-right: 17px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  @include breakpoint($tablet) {
+    z-index: 9;
+  }
+}

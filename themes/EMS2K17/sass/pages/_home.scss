@@ -1,0 +1,118 @@
+/*------------------------------------*\
+    * @file
+    * Home.
+\*------------------------------------*/
+.wrapper {
+  display: flex;
+  flex: 1 0 auto;
+  min-height: 97vh;
+  .header {
+    max-width: 100%;
+  }
+  @include breakpoint($small) {
+    .content {
+    width: 100%;
+    }
+    .main-content {
+      overflow: scroll;
+      max-height: 60vh;
+      @include breakpoint($mobile) {
+        max-height: 100vh;
+      }
+    }
+  }
+  @include breakpoint($tablet) {
+    .content {
+    width: 80%;
+    }
+  }
+}
+
+
+
+.home-content {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding: 47px;
+  margin-top: 14%;
+  margin-bottom: 92px;
+  @include breakpoint($tablet) {
+    max-width: 60%;
+  }
+  @include breakpoint($laptop) {
+    max-width: 45%;
+  }
+  p {
+    line-height: 30px;
+    font-size: 20px;
+    color: #826969;
+  }
+  .fa-quote-left {
+    @include quotes-icon(60px);
+    top: 0px;
+    left: 10px;
+    @include breakpoint($tablet) {
+      @include quotes-icon(66px);
+      left: -10px;
+    }
+  }
+  .fa-quote-right {
+    @include quotes-icon(60px);
+    bottom: 0px;
+    right: 10px;
+    @include breakpoint($tablet) {
+      @include quotes-icon(66px);
+      right: 0;
+    }
+  }
+}
+
+
+.logout-content {
+  width: 100%;
+  .region-content {
+    width: 30%;
+    margin: 50px auto;
+    text-align: center;
+    border: 2px solid #65656b;
+    border-top: 10px solid #65656b;
+    form.user-login-form {
+      padding: 30px;
+      .js-form-item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        margin: 35px auto;
+        font-size: 21px;
+        align-items: center;
+        .form-required::after {
+          content: none;
+        }
+        input {
+          width: 60%;
+        }
+      }
+      input.js-form-submit {
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+      }
+    }
+
+    .item-list {
+      margin: 0;
+      padding: 15px;
+      font-size: 20px;
+      background: #65656b;
+      ul,li {
+          margin: 0;
+          a {
+            text-decoration: none;
+            color: #f0eee3;
+          }
+      }
+    }
+  }
+}

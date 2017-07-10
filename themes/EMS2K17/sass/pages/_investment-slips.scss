@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    * @file
+    * Investment Slips.
+\*------------------------------------*/
+
+
+@include breakpoint($small) {
+  .view-installment-slip,.view-salary-slip,.view-year-holiday-calendar  {
+    .view-content {
+      padding: 15px;
+      table {
+        width: 100%;
+        margin: 0 auto;
+        border: $border;
+        margin-top: 40px;
+        margin-bottom: 85px;
+        thead {
+          background-color: #63625d;
+          color: #f0eee3;
+        }
+        tbody {
+          background-color: #f0eee3;
+          tr {
+            border-top: $border;
+            a {
+              text-decoration: none;
+              color: #63625d;
+            }
+          }
+        }
+        td,th {
+            text-align :center;
+            font-size: 18px;
+            @include breakpoint($tablet) {
+              font-size: 22px;
+            }
+        }
+        .views-field-title,.views-field-field-date
+        {
+          width: 30%;
+          border-right: $border;
+          font-size: 22px;
+          padding: 10px 0px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@include breakpoint($tablet) {
+  table {
+    width: 80%;
+  }
+}
+@include breakpoint($laptop) {
+  table {
+    width: 60%;
+  }
+}
+

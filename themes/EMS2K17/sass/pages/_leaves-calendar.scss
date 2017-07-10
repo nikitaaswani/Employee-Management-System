@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    * @file
+    * Leaves Calendar.
+\*------------------------------------*/
+
+.view-leave-calendar {
+  .view-header {
+    text-align: center;
+    h3 {
+      font-size: 26px;
+      padding: 10px;
+    }
+    .pager {
+      ul {
+        margin: 19px;
+        display: flex;
+        justify-content: center;
+        li {
+          border-radius: 6px;
+          outline: none;
+          background-color: rgba(95, 90, 90, 0.91);
+          width: 91px;
+          margin: 0px 10px;
+          a {
+            text-decoration: none;
+            color: #fffaf0;
+          }
+        }
+      }
+    }
+  }
+}

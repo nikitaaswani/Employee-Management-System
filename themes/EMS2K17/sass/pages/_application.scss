@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    * @file
+    * Application.
+\*------------------------------------*/
+
+#block-ems2k17-views-block-leave-application-block-1,#block-ems2k17-views-block-leave-application-block-2,#block-ems2k17-views-block-leave-application-block-3,#block-ems2k17-views-block-leave-application-block-4,#block-ems2k17-views-block-submitted-leave-applications-block-1 {
+  border: 1px solid black;
+  margin: 20px 20px;
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    background-color: #63625d;
+    color: #f0eee3;
+  }
+}
+
+.view-leave-application {
+  .application-wrapper,.views-row {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+  .views-field {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid black;
+    word-break: break-all;
+  }
+  .views-field:last-of-type {
+    border-right: none;
+  }
+  .views-row {
+    border-top: 1px solid black;
+  }
+  .application-title {
+    font-size: 22px;
+  }
+}
+
+

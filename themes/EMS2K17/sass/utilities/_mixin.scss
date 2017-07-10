@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    * @file
+    * Mixins.
+\*------------------------------------*/
+
+@mixin quotes-icon($font) {
+  font-size: $font;
+  position: absolute;
+  color: #524545;
+}
+
+@mixin sidebar-icons {
+  font: normal normal normal 17px/1 FontAwesome;
+  padding-right: 9px;
+}

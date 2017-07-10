@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    * @file
+    * Banner.
+\*------------------------------------*/
+#block-banner img {
+  @include breakpoint($small){
+    width:100%;
+  }
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+}

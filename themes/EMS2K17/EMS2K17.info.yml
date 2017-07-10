@@ -1,0 +1,16 @@
+name: EMS2K17
+type: theme
+base theme: classy
+core: '8.x'
+description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+
+libraries:
+  - EMS2K17/global
+
+regions:
+  sidebar: 'Sidebar'
+  header: Header
+  content: Content
+  footer: footer
+
+

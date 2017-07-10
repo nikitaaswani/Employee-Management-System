@@ -1,0 +1,23 @@
+@import "breakpoint";
+//breakpoints
+
+$small: screen;
+$mobile: screen (min-width 426px);
+$tablet: screen (min-width 768px);
+$laptop: screen (min-width 1024px);
+$widedesktop: screen (min-width 1400px);
+
+@import "utilities/reset";
+
+@import "utilities/mixin";
+@import "utilities/variables";
+@import "components/sidebar";
+@import "components/footer";
+@import "components/header";
+@import "block/banner";
+@import "block/heading";
+@import "pages/home";
+@import "pages/investment-slips";
+@import "pages/myaccount";
+@import "pages/leaves-calendar";
+@import "pages/application";
